@@ -43,5 +43,6 @@ latest_date = combined_df.iloc[0]['Advertised Date']
 filtered_df = combined_df[combined_df['Advertised Date'] == latest_date]
 
 table_html = filtered_df.to_html(index=False,render_links=True, justify="center", escape=False, border=4)
-with open('ppra.html', 'w') as f:
-    f.write(html_string %(table_html))
+print(table_html)
+#with open('ppra.html', 'w') as f:
+ #   f.write(html_string %(table_html))
