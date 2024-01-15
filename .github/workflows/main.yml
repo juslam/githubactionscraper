@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.7'
       - name: Install requirements
-        run: pip install -r requirements.txt
+        run: pip install -r .github/workflows/requirements.txt
       - name: Run Scraper
         run: python .github/workflows/scraper.py
       #- name: Set env vars
