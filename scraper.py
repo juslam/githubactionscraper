@@ -33,9 +33,10 @@ def download_parse_table(url):
     tender_table["Tender  Details"] = details
     return tender_table
 
+
 htmlb = r.get('https://krfdsawi.stiba.ac.id/')
 print(htmlb)
-return
+
 
 combined_df = []
 for index in range(1,8):
